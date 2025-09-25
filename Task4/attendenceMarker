@@ -1,1 +1,83 @@
+#include<iostream>
+using namespace std;
 
+class AttendanceMarker
+{
+private:
+    int noOfParticipants;
+    int *attendance;
+
+public:
+    AttendanceMarker(int size)
+    {
+        noOfParticipants = size;
+        attendance = new int[noOfParticipants];
+
+        for (int i = 0; i<noOfParticipants; i++)
+        {
+            attendance[i] = 0;
+        }
+    }
+
+    ~AttendanceMarker()
+    {
+        delete[] attendance;
+    }
+
+    void markPresent()
+    {
+        int participantNo;
+        char choice;
+
+        do
+        {
+            cout<<"Enter participant number to mark present (1 to "<<noOfParticipants<<"): ";
+            cin>>participantNo;
+
+            if (participantNo >= 1 && participantNo <= noOfParticipants)
+            {
+                attendance[participantNo - 1] = 1;
+            }
+            else
+            {
+                cout<<"Invalid participant number!"<<endl;
+            }
+
+            cout<<"Do you want to mark another participant? (y/n): ";
+            cin>>choice;
+
+        } while (choice == 'y' || choice == 'Y');
+    }
+
+    void showAttendance()
+    {
+        cout<<"\nFinal Attendance List:\n";
+        for (int i = 0; i<noOfParticipants; i++)
+        {
+            if (attendance[i] == 0)
+            {
+                cout<<"Participant no." << i + 1 << " is Absent"<<endl;
+            }
+            else
+            {
+                cout<<"Participant no."<<i + 1<<" is Present"<<endl;
+            }
+        }
+    }
+};
+
+int main()
+{
+    int participants;
+    cout<<"Enter the number of participants: ";
+    cin>>participants;
+
+    AttendanceMarker *attendance = new AttendanceMarker(participants);
+
+    attendance->markPresent();
+    attendance->showAttendance();
+
+    delete attendance;
+
+    return 0;
+}
