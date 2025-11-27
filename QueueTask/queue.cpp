@@ -130,7 +130,7 @@ int main(){
 	q.print();
 	
 	cout<<"Dequeuing all elements: \n";
-	while(q.isEmpty())
+	while(!q.isEmpty())
 	{
 		cout<<"Front : "<<q.front()<<" --> dequeued\n";
 		q.dequeue();
