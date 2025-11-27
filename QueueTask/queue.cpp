@@ -68,16 +68,19 @@ class Queue{
 			currentSize++;
 		}
 		
-		void dequeue()
+		int dequeue()
 		{
 			if(isEmpty())
 			{
 				cout<<"Queue underflow"<<endl;
-				return;
+				return -1;
 			}
 			
+			int value = arr[frontIdx];
 			frontIdx = (frontIdx + 1) % capacity;
 			currentSize--;
+			
+			return value;
 		}
 		
 		int front() const {
@@ -101,43 +104,91 @@ class Queue{
 			}
 			cout<<"\n";
 		}
+		
+		void firingSize(int sizeArr1, int sizeArr2)
+		{
+		    Queue q;
+		
+		    cout<<"loading the magazine of 100 bullets capacity"<<endl;
+		    for (int i = 0; i < sizeArr1; i++)
+		    {
+		        cout<<"loading bullet : "<<i + 1<<endl;
+		        q.enqueue(i + 1);
+		    }
+		
+		    int *arr2 = new int[sizeArr2];
+		
+		    cout<<"\n\ndequeuing bullets and loading in another magazine of capacity 20"<<endl;
+		    for (int i = 0; i < sizeArr2; i++)
+		    {
+		        arr2[i] = q.dequeue();
+		        cout<<"dequeued and loaded again : "<<arr2[i]<<endl;
+		    }
+		
+		    int current20 = sizeArr2;
+		    int queueRemaining = sizeArr1 - sizeArr2;
+		
+		    cout<<"\n\nStarting firing cycle...\n\n";
+		
+		    while(queueRemaining > 0)
+		    {
+		        int firedFromArr2 = arr2[current20 - 1];
+		        cout<<"Fired from arr2: "<<firedFromArr2<<endl;
+		        current20--;
+		        
+		        int newBullet = q.dequeue();
+		        cout<< "Taken from queue: "<< newBullet<<endl;
+		        queueRemaining--;
+
+		        arr2[current20] = newBullet;
+		        current20++;
+		
+		        cout<<"arr2 refilled back to 20 bullets\n\n";
+		    }
+		
+		    delete[] arr2;
+		}
+
+
 };
 
 
 int main(){
 	
 	Queue q;
-	
-	cout<<"Enqueue 10, 20, 30, 40\n";
-	q.enqueue(10);
-	q.enqueue(20);
-	q.enqueue(30);
-	q.enqueue(40);
-	q.print();
-	
-	cout<<"Front element : "<<q.front()<<"\n";
-	
-	cout<<"Dequeue two elements\n";
-	q.dequeue();
-	q.dequeue();
-	q.print();
-	cout<<"The front element now : "<<q.front()<<"\n";
-	
-	cout<<"Enqueue 50, 60, 70 (This will cause resize internally)\n";
-	q.enqueue(50);
-	q.enqueue(60);
-	q.enqueue(70);
-	q.print();
-	
-	cout<<"Dequeuing all elements: \n";
-	while(!q.isEmpty())
-	{
-		cout<<"Front : "<<q.front()<<" --> dequeued\n";
-		q.dequeue();
-	}
-	
-	q.dequeue();
-	
+	q.firingSize(100, 20);
+//	q.firingSize(100, 20);
+//	
+//	cout<<"Enqueue 10, 20, 30, 40\n";
+//	q.enqueue(10);
+//	q.enqueue(20);
+//	q.enqueue(30);
+//	q.enqueue(40);
+//	q.print();
+//	
+//	cout<<"Front element : "<<q.front()<<"\n";
+//	
+//	cout<<"Dequeue two elements\n";
+//	q.dequeue();
+//	q.dequeue();
+//	q.print();
+//	cout<<"The front element now : "<<q.front()<<"\n";
+//	
+//	cout<<"Enqueue 50, 60, 70 (This will cause resize internally)\n";
+//	q.enqueue(50);
+//	q.enqueue(60);
+//	q.enqueue(70);
+//	q.print();
+//	
+//	cout<<"Dequeuing all elements: \n";
+//	while(!q.isEmpty())
+//	{
+//		cout<<"Front : "<<q.front()<<" --> dequeued\n";
+//		q.dequeue();
+//	}
+//	
+//	q.dequeue();
+//	
 	
 	
 	return 0;
