@@ -1,0 +1,60 @@
+===================================================
+        DEPARTMENT ANALYSIS
+===================================================
+
+Department: ARC
+ID      | Name           | Sem | CGPA | Credits | Year
+---------|----------------|-----|------|---------|------
+200006 | Mariam Tanveer |  5  | 3.78 |    88   | 2017
+200004 | Sana Wahab     |  6  | 3.16 |   117   | 2018
+Total Students: 2
+Average CGPA: 3.47
+Highest CGPA: 3.78
+Lowest CGPA: 3.16
+Average Credits: 102.50
+
+Department: CIV
+ID      | Name           | Sem | CGPA | Credits | Year
+---------|----------------|-----|------|---------|------
+200010 | Hana Qureshi   |  6  | 3.42 |   102   | 2021
+Total Students: 1
+Average CGPA: 3.42
+Highest CGPA: 3.42
+Lowest CGPA: 3.42
+Average Credits: 102.00
+
+Department: ECO
+ID      | Name           | Sem | CGPA | Credits | Year
+---------|----------------|-----|------|---------|------
+200001 | Imran Zaman    |  1  | 2.98 |    26   | 2019
+200009 | Umar Usman     |  8  | 3.08 |   148   | 2022
+Total Students: 2
+Average CGPA: 3.03
+Highest CGPA: 3.08
+Lowest CGPA: 2.98
+Average Credits: 87.00
+
+Department: MAT
+ID      | Name           | Sem | CGPA | Credits | Year
+---------|----------------|-----|------|---------|------
+200003 | Majid Gillani  |  6  | 3.09 |   107   | 2022
+200005 | Omar Yousuf    |  6  | 3.08 |   100   | 2021
+200008 | Waqar Zia      |  8  | 3.79 |   144   | 2022
+Total Students: 3
+Average CGPA: 3.32
+Highest CGPA: 3.79
+Lowest CGPA: 3.08
+Average Credits: 117.00
+
+Department: MEC
+ID      | Name           | Sem | CGPA | Credits | Year
+---------|----------------|-----|------|---------|------
+200002 | Azhar Quershi  |  2  | 3.94 |    32   | 2023
+200007 | Samina Ansari  |  4  | 3.20 |    62   | 2020
+Total Students: 2
+Average CGPA: 3.57
+Highest CGPA: 3.94
+Lowest CGPA: 3.20
+Average Credits: 47.00
+
+===================================================

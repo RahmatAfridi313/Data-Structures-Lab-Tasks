@@ -1,0 +1,50 @@
+===================================================
+        STUDENTS SORTED BY ENROLLMENT YEAR
+===================================================
+
+Enrollment Year: 2017
+ID      | Name           | Dept | Sem | CGPA | Credits
+---------|----------------|------|-----|------|--------
+200006 | Mariam Tanveer | ARC  |  5  | 3.78 |    88
+Average CGPA for 2017: 3.78
+
+Enrollment Year: 2018
+ID      | Name           | Dept | Sem | CGPA | Credits
+---------|----------------|------|-----|------|--------
+200004 | Sana Wahab     | ARC  |  6  | 3.16 |   117
+Average CGPA for 2018: 3.16
+
+Enrollment Year: 2019
+ID      | Name           | Dept | Sem | CGPA | Credits
+---------|----------------|------|-----|------|--------
+200001 | Imran Zaman    | ECO  |  1  | 2.98 |    26
+Average CGPA for 2019: 2.98
+
+Enrollment Year: 2020
+ID      | Name           | Dept | Sem | CGPA | Credits
+---------|----------------|------|-----|------|--------
+200007 | Samina Ansari  | MEC  |  4  | 3.20 |    62
+Average CGPA for 2020: 3.20
+
+Enrollment Year: 2021
+ID      | Name           | Dept | Sem | CGPA | Credits
+---------|----------------|------|-----|------|--------
+200010 | Hana Qureshi   | CIV  |  6  | 3.42 |   102
+200005 | Omar Yousuf    | MAT  |  6  | 3.08 |   100
+Average CGPA for 2021: 3.25
+
+Enrollment Year: 2022
+ID      | Name           | Dept | Sem | CGPA | Credits
+---------|----------------|------|-----|------|--------
+200003 | Majid Gillani  | MAT  |  6  | 3.09 |   107
+200008 | Waqar Zia      | MAT  |  8  | 3.79 |   144
+200009 | Umar Usman     | ECO  |  8  | 3.08 |   148
+Average CGPA for 2022: 3.32
+
+Enrollment Year: 2023
+ID      | Name           | Dept | Sem | CGPA | Credits
+---------|----------------|------|-----|------|--------
+200002 | Azhar Quershi  | MEC  |  2  | 3.94 |    32
+Average CGPA for 2023: 3.94
+
+===================================================

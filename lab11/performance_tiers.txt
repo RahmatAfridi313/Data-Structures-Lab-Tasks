@@ -1,0 +1,37 @@
+===================================================
+        PERFORMANCE TIERS
+===================================================
+
+Elite Tier (CGPA >= 3.70): 3 students (30.00%)
+High Achievers (3.30 <= CGPA < 3.70): 1 students (10.00%)
+Good Standing (3.00 <= CGPA < 3.30): 5 students (50.00%)
+Satisfactory (2.50 <= CGPA < 3.00): 1 students (10.00%)
+Needs Improvement (CGPA < 2.50): 0 students (0.00%)
+
+Elite Tier:
+ID      | Name           | Dept | Sem | CGPA | Credits | Year
+---------|----------------|------|-----|------|---------|------
+200002 | Azhar Quershi  | MEC  |  2  | 3.94 |    32   | 2023
+200008 | Waqar Zia      | MAT  |  8  | 3.79 |   144   | 2022
+200006 | Mariam Tanveer | ARC  |  5  | 3.78 |    88   | 2017
+
+High Achievers:
+ID      | Name           | Dept | Sem | CGPA | Credits | Year
+---------|----------------|------|-----|------|---------|------
+200010 | Hana Qureshi   | CIV  |  6  | 3.42 |   102   | 2021
+
+Good Standing:
+ID      | Name           | Dept | Sem | CGPA | Credits | Year
+---------|----------------|------|-----|------|---------|------
+200007 | Samina Ansari  | MEC  |  4  | 3.20 |    62   | 2020
+200004 | Sana Wahab     | ARC  |  6  | 3.16 |   117   | 2018
+200003 | Majid Gillani  | MAT  |  6  | 3.09 |   107   | 2022
+200009 | Umar Usman     | ECO  |  8  | 3.08 |   148   | 2022
+200005 | Omar Yousuf    | MAT  |  6  | 3.08 |   100   | 2021
+
+Satisfactory:
+ID      | Name           | Dept | Sem | CGPA | Credits | Year
+---------|----------------|------|-----|------|---------|------
+200001 | Imran Zaman    | ECO  |  1  | 2.98 |    26   | 2019
+
+===================================================
